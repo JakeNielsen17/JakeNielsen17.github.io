@@ -1,5 +1,5 @@
 ---
-title: "Booze Market"
+title: ""
 author: "Jake Nielson"
 date: "2023-12-12"
 categories: [beer, code, data-analysis]
