@@ -17,8 +17,8 @@ website:
 format:
   html:
     theme: 
-      light: cyborg
-      dark: darkly
+      light: flatly
+      dark: cyborg
     mainfont: system-ui; 
     highlight-style: atom-one
     css: styles.css
