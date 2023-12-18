@@ -109,21 +109,21 @@
     "href": "project.html",
     "title": "DANL Project",
     "section": "",
-    "text": "About this project 👏\n\n1 + 1\n\n[1] 2"
+    "text": "About this project\nThis page will give you an overview and good idea of the distribution of top swim times and show you just how impressive the world record and top times really are."
   },
   {
     "objectID": "project.html#summary-statistics",
     "href": "project.html#summary-statistics",
     "title": "DANL Project",
     "section": "2.1 Summary Statistics",
-    "text": "2.1 Summary Statistics\n\nmpg &lt;- ggplot2::mpg\n\n\n\n\n  \n\n\n\nskim(mpg) %&gt;% \n  select(-n_missing)\n\n\nData summary\n\n\nName\nmpg\n\n\nNumber of rows\n234\n\n\nNumber of columns\n11\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n6\n\n\nnumeric\n5\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\nskim_variable\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nmanufacturer\n1\n4\n10\n0\n15\n0\n\n\nmodel\n1\n2\n22\n0\n38\n0\n\n\ntrans\n1\n8\n10\n0\n10\n0\n\n\ndrv\n1\n1\n1\n0\n3\n0\n\n\nfl\n1\n1\n1\n0\n5\n0\n\n\nclass\n1\n3\n10\n0\n7\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\ndispl\n1\n3.47\n1.29\n1.6\n2.4\n3.3\n4.6\n7\n▇▆▆▃▁\n\n\nyear\n1\n2003.50\n4.51\n1999.0\n1999.0\n2003.5\n2008.0\n2008\n▇▁▁▁▇\n\n\ncyl\n1\n5.89\n1.61\n4.0\n4.0\n6.0\n8.0\n8\n▇▁▇▁▇\n\n\ncty\n1\n16.86\n4.26\n9.0\n14.0\n17.0\n19.0\n35\n▆▇▃▁▁\n\n\nhwy\n1\n23.44\n5.95\n12.0\n18.0\n24.0\n27.0\n44\n▅▅▇▁▁"
+    "text": "2.1 Summary Statistics\n\nswimming &lt;- read_csv(\"/Users/jakenielsen/Desktop/swimming.csv\")\n\n\n\n\n  \n\n\n\nskim(swimming)\n\n\nData summary\n\n\nName\nswimming\n\n\nNumber of rows\n200\n\n\nNumber of columns\n16\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n10\n\n\nlogical\n2\n\n\nnumeric\n4\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nmeet_name\n0\n1\n9\n61\n0\n109\n0\n\n\nswim_date\n0\n1\n10\n10\n0\n132\n0\n\n\nfull_desc\n0\n1\n25\n25\n0\n1\n0\n\n\nteam_code\n0\n1\n3\n3\n0\n49\n0\n\n\nteam_short_name\n0\n1\n4\n26\n0\n49\n0\n\n\nfull_name_computed\n0\n1\n9\n29\n0\n200\n0\n\n\ngender\n0\n1\n1\n1\n0\n1\n0\n\n\nbirth_date\n0\n1\n10\n10\n0\n198\n0\n\n\nmeet_city\n1\n1\n4\n14\n0\n73\n0\n\n\ncountry_code\n0\n1\n3\n3\n0\n36\n0\n\n\n\nVariable type: logical\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\ncount\n\n\n\n\nevent_id\n200\n0\nNaN\n:\n\n\nstandard_name\n200\n0\nNaN\n:\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nswim_time\n0\n1.00\n21.85\n0.27\n20.91\n21.72\n21.92\n22.05\n22.14\n▁▁▂▅▇\n\n\nRANK\n0\n1.00\n98.91\n56.98\n1.00\n49.00\n100.00\n146.50\n198.00\n▇▇▇▇▇\n\n\nRank_Order\n0\n1.00\n100.50\n57.88\n1.00\n50.75\n100.50\n150.25\n200.00\n▇▇▇▇▇\n\n\nfina_points\n30\n0.85\n875.89\n33.73\n842.00\n852.00\n868.00\n888.50\n1029.00\n▇▃▁▁▁"
   },
   {
     "objectID": "project.html#mpg-and-a-type-of-cars",
     "href": "project.html#mpg-and-a-type-of-cars",
     "title": "DANL Project",
     "section": "2.2 MPG and a Type of Cars",
-    "text": "2.2 MPG and a Type of Cars\nThe following boxplot shows how the distribution of highway MPG (hwy) varies by a type of cars (class) 🚙 🚚 🚐.\n\nggplot(data = mpg) +\n  geom_boxplot(aes(x = class, y = hwy, fill = class),\n               show.legend = F) +\n  labs(x = \"Class\", y = \"Highway\\nMPG\")"
+    "text": "2.2 MPG and a Type of Cars\nThe following boxplot shows how the distribution of highway MPG (hwy) varies by a type of cars (class) 🚙 🚚 🚐.\n\nggplot(data = swimming) +\n  geom_histogram(aes(x = swim_time, fill = swim_time), color = \"black\", fill = \"blue\", bins = 30) +\n  scale_x_continuous(breaks = seq(20.90, max(swimming$swim_time), by = 0.1)) +\n  ggtitle(\"Top 200 times, 50 LCM freestyle\") +\n  xlab(\"Swim Time\") +\n  ylab(\"Count\")"
   },
   {
     "objectID": "Newtab.html",
@@ -152,5 +152,26 @@
     "title": "Jake Nielsen",
     "section": "",
     "text": "Let’s analyze the beer_data data:\n\nbeer_data &lt;- read_csv(\"https://bcdanl.github.io/data/beer_markets.csv\")\n\nrmarkdown::paged_table(beer_data)"
+  },
+  {
+    "objectID": "project.html#overview-of-the-top-times",
+    "href": "project.html#overview-of-the-top-times",
+    "title": "DANL Project",
+    "section": "2.2 Overview of the top times",
+    "text": "2.2 Overview of the top times\nThe following histogram shows the frequency of the top times in the world. You can see that the frequency decreases fast as the time gets closer to the world record of 20.9\n\nggplot(data = swimming) +\n  geom_histogram(aes(x = swim_time, fill = swim_time), color = \"black\", fill = \"blue\", bins = 30) +\n  scale_x_continuous(breaks = seq(20.90, max(swimming$swim_time), by = 0.1)) +\n  ggtitle(\"Top 200 times, 50 LCM freestyle\") +\n  xlab(\"Swim Time\") +\n  ylab(\"Count\")\n\n\n\n\n\n2.2.1 Country frequency\nThis is a list and bar graph that shows the countries with the most swimmers on the top 200 list\n\np2 &lt;- swimming %&gt;% \n  count(team_short_name) %&gt;% \n  arrange(-n) %&gt;% \n  head(10)\n\np2\n\n# A tibble: 10 × 2\n   team_short_name              n\n   &lt;chr&gt;                    &lt;int&gt;\n 1 United States of America    41\n 2 Russian Federation          15\n 3 Australia                   14\n 4 Brazil                      10\n 5 Italy                       10\n 6 France                       8\n 7 Japan                        8\n 8 Great Britain                7\n 9 Hungary                      6\n10 Netherlands                  6\n\n\n\np3 &lt;- swimming %&gt;%\n  filter( team_code %in% c(\"USA\", \"RUS\", \"AUS\", \"BRA\", \"ITA\", \"FRA\", \"JPN\", \"GBR\", \"HUN\", \"NED\"))\nggplot(data = p3, aes(y = team_short_name)) +\n  geom_bar(fill = \"lightblue\", color = \"black\") +\n  ggtitle(\"Bar Plot of Team Frequencies\") +\n  xlab(\"Country\") +\n  ylab(\"Frequency\")"
+  },
+  {
+    "objectID": "project.html#top",
+    "href": "project.html#top",
+    "title": "DANL Project",
+    "section": "2.3 top",
+    "text": "2.3 top\n\np2 &lt;- swimming %&gt;% \n  count(team_short_name) %&gt;% \n  arrange(-n) %&gt;% \n  head(10)\n\np2\n\n# A tibble: 10 × 2\n   team_short_name              n\n   &lt;chr&gt;                    &lt;int&gt;\n 1 United States of America    41\n 2 Russian Federation          15\n 3 Australia                   14\n 4 Brazil                      10\n 5 Italy                       10\n 6 France                       8\n 7 Japan                        8\n 8 Great Britain                7\n 9 Hungary                      6\n10 Netherlands                  6"
+  },
+  {
+    "objectID": "project.html#country-frequency",
+    "href": "project.html#country-frequency",
+    "title": "DANL Project",
+    "section": "2.3 Country frequency",
+    "text": "2.3 Country frequency\nThis is a list and bar graph that shows the countries with the most swimmers on the top 200 list\n\np2 &lt;- swimming %&gt;% \n  count(team_short_name) %&gt;% \n  arrange(-n) %&gt;% \n  head(10)\n\np2\n\n# A tibble: 10 × 2\n   team_short_name              n\n   &lt;chr&gt;                    &lt;int&gt;\n 1 United States of America    41\n 2 Russian Federation          15\n 3 Australia                   14\n 4 Brazil                      10\n 5 Italy                       10\n 6 France                       8\n 7 Japan                        8\n 8 Great Britain                7\n 9 Hungary                      6\n10 Netherlands                  6\n\n\n\np3 &lt;- swimming %&gt;%\n  filter( team_code %in% c(\"USA\", \"RUS\", \"AUS\", \"BRA\", \"ITA\", \"FRA\", \"JPN\", \"GBR\", \"HUN\", \"NED\"))\nggplot(data = p3, aes(y = team_short_name)) +\n  geom_bar(fill = \"lightblue\", color = \"black\") +\n  ggtitle(\"Bar Plot of Team Frequencies\") +\n  xlab(\"Country\") +\n  ylab(\"Frequency\")"
   }
 ]
