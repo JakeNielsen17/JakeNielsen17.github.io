@@ -1,0 +1,39 @@
+---
+title: "Beer Market"
+author: "Jake Nielsen"
+date: "2023-10-30"
+categories: [Beer, code, analysis]
+image: "beer.jpeg"
+---
+
+```{r}
+#| include: false
+
+library(knitr)
+library(rmarkdown)
+library(tidyverse)
+library(skimr)
+library(ggthemes)
+library(hrbrthemes)
+
+theme_set(theme_ipsum()+
+          theme(strip.background =element_rect(fill="lightgray"),
+                axis.title.x  = element_text(angle = 0,
+                                            size = rel(1.5),
+                                            margin = margin(10,0,0,0)),
+                axis.title.y  = element_text(angle = 0,
+                                            size = rel(1.5),
+                                            margin = margin(0,10,0,0))
+                )
+          )
+```
+
+```{r}
+BeerMarkets <- read_csv("https://bcdanl.github.io/data/beer_markets.csv")
+
+```
+
+```{r}
+#| results: asis
+rmarkdown::paged_table(BeerMarkets)
+```

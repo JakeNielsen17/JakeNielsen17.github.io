@@ -1,9 +1,9 @@
 ---
-title: "Starwars"
-author: "Your Name"
+title: "NYC restaurants"
+author: "Jake Nielsen"
 date: "2023-10-30"
-categories: [starwars, code, analysis]
-image: "image.png"
+categories: [food, code, analysis]
+image: "restaurants.png"
 
 execute: 
   warning: false
@@ -33,66 +33,35 @@ theme_set(theme_ipsum()+
           )
 ```
 
-Let's analyze the `starwars` data:
+
 
 ```{r}
-starwars <- read_csv("https://bcdanl.github.io/data/starwars.csv")
+NYC_Restaurant <- read_csv("https://bcdanl.github.io/data/DOHMH_NYC_Restaurant_Inspection.csv")
 ```
 
 
 ```{r}
 #| results: asis
-rmarkdown::paged_table(starwars) 
+rmarkdown::paged_table(NYC_Restaurant)
 ```
 
 
-
-## Variable Description for `starwars` data.frame
-
-The following describes the variables in the `starwars` data.frame.
-
-
-- `films`
-List of films the character appeared in
-
-- `name`
-Name of the character
-
-- `species`
-Name of species
-
-- `height`
-Height (cm)
-
-- `mass`
-Weight (kg)
-
-- `hair_color`, `skin_color`, `eye_color`
-Hair, skin, and eye colors
-
-- `birth_year`
-Year born (BBY = Before Battle of Yavin)
-
-- `sex`
-The biological sex of the character, namely male, female, hermaphroditic, or none (as in the case for Droids).
-
-- `gender`
-The gender role or gender identity of the character as determined by their personality or the way they were programmed (as in the case for Droids).
-
-- `homeworld`
-Name of homeworld
-
-
-## Human vs. Droid
 
 ```{r}
-ggplot(data = 
-         starwars %>% 
-         filter(species %in% c("Human", "Droid"))) +
-  geom_boxplot(aes(x = species, y = mass, 
-                   fill = species),
-               show.legend = FALSE)
+  ggplot(NYC_Restaurant) +
+  geom_boxplot(aes(x = SCORE, y = GRADE, fill = GRADE) ) +
+  facet_grid( `CRITICAL FLAG` ~ . )
+```
 
+```{r}
+ggplot(NYC_Restaurant) +
+  geom_histogram(aes(x = SCORE), binwidth = 1 ) +
+  facet_grid( `CRITICAL FLAG` ~ GRADE )
 ```
 
 
+```{r}
+ggplot(NYC_Restaurant) +
+  geom_histogram(aes(x = SCORE), binwidth = 1 ) +
+  facet_grid( `CRITICAL FLAG` ~ GRADE, scales = 'free_x' )
+```

@@ -54,7 +54,7 @@ This page will give you an overview and good idea of the distribution of top swi
 
 # Data
 
-The data set `swimming` contains a list of the all time top 200 times in the world. This list is filtered to the 50LCM freestyle and only one time per person. The data set also contains other useful information about the swim, such as the name, year, country, and meet name.
+The data set `swimming` contains a list of the all time top 200 times in the world. This list is filtered to the 50LCM (long course meters) freestyle and only one time per person. The data set also contains other useful information about the swim, such as the name, year, country, and meet name. The data is filtered to contain only best times for a swimmer, meaning no repeated names on the list.
 
 
 ## Summary Statistics
@@ -176,3 +176,8 @@ ggplot(data = swimming, aes(x = country_code)) +
 ```
 
 This bar chart displays all countries top 200 swims have been in, USA being significantly more than the rest
+
+
+# Conclusion
+
+The analysis of the top 200 swimming times in the 50LCM freestyle reveals valuable insights into the competitive landscape of this particular swimming event. By examining the distribution of times and identifying trends we can gain a comprehensive understanding of the current performance standards and potential areas for improvement. This data-driven approach not only aids in benchmarking individual performances but also contributes to the broader understanding of the sport, assisting in the development of strategic training and competition strategies.
