@@ -1,42 +1,42 @@
 ---
-title: "YOUR NAME" 
+title: "Jake Nielsen" 
 about:
   template: trestles  # jolla  trestles  solana  marquee  broadside
-  image: img/profile.png
+  image: img/IMG_5550.JPG
   image-width: 16em
   image-shape: rounded # rectangle  round  rounded
   
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin
     - icon: instagram
       text: Instagram
       href: https://instagram.com
     - icon: github
       text: GitHub
-      href: https://github.com
+      href: https://github.com/JakeNielsen17/JakeNielsen18.github.io
     - icon: file-earmark-pdf
       text: Resumé
-      href: resume-example.pdf
+      href: resume.pdf
       target: _blank
     - icon: mailbox
       text: Email
-      href: mailto:YOUR_EMAIL@geneseo.edu
+      href: mailto:jrn101L@geneseo.edu
 
 ---
 
 
-Finley Malloc majors in Data Analytics at SUNY Geneseo. When not working on data analytics, Finley enjoys spending time unicycling and playing with her pet iguana.
+Jake Nielsen majors in Mathematics at SUNY Geneseo. Jake is a part of the Geneseo swim team and is a Junior.
 
 ## Education
 
 State University of New York at Geneseo | Geneseo, NY <br>
-B.S. in Data Analytics | Aug 2022 - May 2026 <br>
-Minor in Economics
+B.A. in Mathematics | Aug 2022 - May 2026 <br>
+Minor in Data analytics
 
 ## Experience
 
-Starbucks Analytics | Data Analyst Intern | May 2024 - Aug 2024
+Currently enrolled in data analytics, statistics, and mathematics classes
 
 
