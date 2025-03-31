@@ -2,7 +2,8 @@
   {
     "listing": "/blog-listing.html",
     "items": [
-      "/posts/Python_basics.html",
+      "/posts/spotify/Music_blog.html",
+      "/posts/py-basic/Python_basics.html",
       "/posts/welcome/index.html",
       "/posts/starwars/starwars_df.html",
       "/posts/post-with-code/index.html"
